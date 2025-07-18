@@ -1,0 +1,134 @@
+User Guide for Bus Ticketing System
+
+1. Add a Trip
+
+Use this option to enter a new bus trip into the system. You will need to provide specific details about the trip.
+
+Steps:
+
+Select Option 1 from the main menu.
+
+Enter the source city (where the trip starts).
+
+Enter the destination city (where the trip ends).
+
+Input the distance in miles between the source and destination.
+
+Provide the driver's name.
+
+Enter the bus model.
+
+Specify the maximum number of travelers that can be accommodated on this trip.
+
+Confirm your entries. A message will indicate that the trip has been successfully added.
+
+2. Remove a Trip
+
+Use this option to delete an existing trip from the system. This is useful for managing outdated or canceled trips.
+
+Steps:
+
+Select Option 2 from the main menu.
+
+You will see a list of all trips with their respective indices. Enter the index number of the trip you wish to remove.
+
+Confirm your choice. A message will confirm that the trip has been removed.
+
+3. Book a Ticket
+
+This option allows you to book a ticket for any available trip. You will also choose a discount type if applicable.
+
+Steps:
+
+Select Option 3 from the main menu.
+
+View the list of available trips and select the trip by its index number you wish to book a ticket for.
+
+Choose a discount type from the options provided (1: Student, 2: Military, 3: Club Member).
+
+Confirm your entries. You will see the calculated base price and the discounted price. A confirmation message will show that your ticket has been booked.
+
+4. Display All Trips
+
+Use this option to view all currently scheduled trips. This is useful for seeing all travel options or managing trip schedules.
+
+Steps:
+
+Select Option 4 from the main menu.
+
+A list of all trips, including details such as source, destination, and distance, will be displayed.
+
+5. Cancel a Ticket
+
+Select this option to cancel a booked ticket.
+
+Steps:
+
+Choose Option 5 from the main menu.
+
+Confirm your desired index of booked ticket
+
+
+6. Exit
+
+Select this option to safely exit the program.
+
+Steps:
+
+Choose Option 6 from the main menu.
+
+Confirm your desire to exit. The program will close after a farewell message.
+
+
+
+TEST CASES with EXPECTED OUTCOME
+
+Case 1: Successful Ticket Booking
+   Description:
+       	 Customer searches for available trips between two specified destinations.
+       	Customer selects a preferred trip and provides their information (name, age, any applicable discounts).
+       	System confirms seat availability and successfully books the ticket, issuing a confirmation message and ticket details.
+   Expected Outcome:
+       	Ticket is correctly generated and associated with the customer.
+       	Passenger count for the trip is accurately updated.
+       	Customer receives clear confirmation and ticket details.
+
+Case 2: Ticket Cancellation
+    Description:
+       	Customer initiates a ticket cancellation request within the allowed time frame.
+       	System verifies ticket validity and cancellation eligibility.
+       	System refunds any applicable charges and updates trip passenger count.
+       	Customer receives confirmation of cancellation and refund details.
+    Expected Outcome:
+       	Ticket is successfully canceled and removed from the passenger list.
+       	Customer receives appropriate refund (if applicable) and a cancellation confirmation.
+       	Trip passenger count accurately reflects the cancellation.
+
+Case 3: Capacity Limit Reached
+    Description:
+       	Customer attempts to book a ticket for a trip that has already reached its maximum passenger capacity.
+       	System notifies the customer that the trip is fully booked and offers alternative trips or suggests waiting for a later schedule.
+    Expected Outcome:
+       	System prevents overbooking and clearly informs the customer about booking availability.
+       	Customer is provided with helpful alternatives for booking.
+
+Case 4: Discount Eligibility Verification
+    Description:
+       	Customer applies for a discount (e.g., student, military, bus club member) during ticket booking.
+       	System validates the customer's eligibility based on provided information.
+       	If eligible, the system applies the correct discount to the ticket price.
+    Expected Outcome:
+       	System accurately verifies discount eligibility and applies the appropriate discount.
+       	Customer receives the correct ticket price with the discount applied.
+
+
+Case 5: Driver Assignment
+    Description:
+      	A trip is scheduled for departure.
+      	System assigns a qualified and available driver to the trip, considering their driving hours and schedule.
+    Expected Outcome:
+      	System successfully assigns a suitable driver to the trip, ensuring compliance with driver regulations.
+      	Driver is notified of their assigned trip.
+
+
+
